@@ -11,15 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@solana/web3.js": "^1.95.3",
-    "@types/dotenv": "^8.2.0",
-    "@types/node": "^22.5.5",
     "dotenv": "^16.4.5",
-    "node-telegram-bot-api": "^0.66.0",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.6.2"
-  },
-  "devDependencies": {
-    "@types/bs58": "^4.0.4",
-    "@types/node-telegram-bot-api": "^0.64.7"
+    "node-telegram-bot-api": "^0.66.0"
   }
 }

@@ -1,18 +1,17 @@
-import TelegramBot from "node-telegram-bot-api";
-import {
+const TelegramBot = require("node-telegram-bot-api");
+const {
   Connection,
   Keypair,
   LAMPORTS_PER_SOL,
   PublicKey,
   SystemProgram,
   Transaction,
-} from "@solana/web3.js";
-import bs58 from "bs58";
-import { savePrivateKey, getPrivateKey } from "./dbUtils"; // Import the db utils
-import "dotenv/config";
+} = require("@solana/web3.js");
+const bs58 = require("bs58");
+const { savePrivateKey, getPrivateKey } = require("./dbUtils"); // Import the db utils
+require("dotenv").config();
 
-
-const botToken = process.env.BOT_TOKEN!;
+const botToken = process.env.BOT_TOKEN;
 const bot = new TelegramBot(botToken, { polling: true });
 
 // Solana setup
